@@ -1,0 +1,1 @@
+@include('Newage.modules.auth.passwords.email')

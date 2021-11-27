@@ -1,0 +1,7 @@
+{
+    "name": "Newage",
+    "package_name": "ahmadsyamim/newage-theme",
+    "extends": "",
+    "asset-path": "Newage",
+    "views-path": "Newage"
+}
