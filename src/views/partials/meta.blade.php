@@ -24,11 +24,10 @@
     <link rel="apple-touch-icon-precomposed" href="{{ url('/') }}/images/apple-touch-icon.png" />
 
     <!-- Styles -->
-    @php 
-     Asset::add('newage.css','newage/css/styles.css');
-     Asset::add('newage.js','newage/js/scripts.js');
-    @endphp
-    {!! Asset::styles() !!}
+    {{ HTML::style('newage/css/styles.css') }}
+    @push('scripts')
+    {{ HTML::script('newage/js/scripts.js') }}
+    @endpush
 
     @if (setting('site.google_analytics_tracking_id'))
     <!-- Google Analytics (gtag.js) -->
